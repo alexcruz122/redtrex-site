@@ -1,0 +1,294 @@
+/* Reset and Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Navbar with Glass Effect */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+body.dark-mode .navbar {
+  background: rgba(18, 18, 18, 0.8);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+body.dark-mode .navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #007aff;
+}
+
+body.dark-mode .navbar a:hover {
+  color: #80bdff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: url('https://i.pinimg.com/originals/7b/30/4c/7b304c7e6f7a378ca53d9b9ea4e13dc5.jpg') no-repeat center center/cover;
+  color: #333;
+  margin-top: 4rem;
+  position: relative;
+}
+
+body.dark-mode .hero {
+  background: url('https://i.pinimg.com/originals/7b/30/4c/7b304c7e6f7a378ca53d9b9ea4e13dc5.jpg') no-repeat center center/cover;
+}
+
+.hero .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+body.dark-mode .hero .background-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1,
+.hero p,
+.hero .shop-now-button {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.shop-now-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode .shop-now-button {
+  background-color: #444;
+}
+
+.shop-now-button:hover {
+  background-color: #005bb5;
+}
+
+body.dark-mode .shop-now-button:hover {
+  background-color: #666;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  z-index: 1100;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #444;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #444;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+/* Products Section */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+body.dark-mode .products {
+  background-color: #2a2a2a;
+}
+
+.product {
+  text-align: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .product {
+  background-color: #333;
+  border-color: #444;
+  color: #f1f1f1;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+body.dark-mode .product p {
+  color: #bbb;
+}
+
+.product button {
+  padding: 0.5rem 1rem;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode .product button {
+  background-color: #444;
+}
+
+.product button:hover {
+  background-color: #005bb5;
+}
+
+body.dark-mode .product button:hover {
+  background-color: #666;
+}
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 950px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fade-in-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+body.loaded .fade-in-image {
+  opacity: 1;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}

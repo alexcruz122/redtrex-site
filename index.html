@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RedTrex Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="414994389_122149155152024260_4274103790937772588_n.jpg" type="image/png" />
+
+  <style>
+    .contact ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: space-around;
+    }
+    .contact li {
+      margin: 0 15px;
+    }
+    .contact li strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .map-container {
+      margin-top: 50px;
+      width: 100%;
+      height: 400px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+      .map-container {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <header class="navbar">
+    <div class="logo">
+      <img src="9e64a828-a374-4749-be14-5e57f8d01be8.png" alt="Logo" />
+      RedTrex
+    </div>
+    <nav>
+      <ul></ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="background-overlay"></div>
+    <h1>RedTrex Technologies</h1>
+    <p>Empowering Tomorrow's Tech Today.</p>
+    <a href="https://shopnow-redtrex.glitch.me/" target="_blank" class="shop-now-button">Shop Now</a>
+    <a href="https://redtrex404.glitch.me/" target="_blank" class="shop-now-button">Software & Tools</a>
+  </section>
+
+  <!-- Slideshow Section -->
+  <section class="slideshow-container">
+    <img src="https://cdn.glitch.global/cf204974-f735-49b9-b997-21c79fb61097/435098736_122170527344024260_388756952267661325_n.jpg?v=1733153954368" alt="Image 1" class="fade-in-image" />
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="product">
+      <h2>Track Your Data Recovery / Request For Data Recovery</h2>
+      <p>Tracking Data Will Be Updated Each Hour</p>
+      <button>Track / Request</button>
+      <p style="font-size: 12px; color: red; margin-top: 5px;">
+        * Please note that data recovery requests are subject to evaluation, and recovery success is not guaranteed.
+      </p>
+      <p style="font-size: 12px; color: red; margin-top: 5px;">
+        * Do not Re-Format or Re-Write Data To Your Device After Data Loss.
+      </p>
+    </div>
+
+    <div class="product">
+      <h2>Free Online Technical Support</h2>
+      <p>I'm Ready To Support You Regarding Any Computer or Device Related Issues Free Of Charge.</p>
+      <button>Chat Me Through WhatsApp</button>
+    </div>
+
+    <div class="product">
+      <h2>Warranty / Service Tracker</h2>
+      <p>You can track your warranty or service status.</p>
+      <button>Track</button>
+    </div>
+
+    <div class="product">
+      <h2>Custom PC Building Service</h2>
+      <p>Get a custom-built PC tailored to your needs and budget.</p>
+      <a href="https://wa.me/94712622012" target="_blank">
+        <button>Get a Quote</button>
+      </a>
+    </div>
+
+    <div class="product">
+      <h2>Hardware Test</h2>
+      <p>Test Your PC/Mobile GPU WebGL Support.</p>
+      <a href="https://wa.me/94712622012" target="_blank">
+        <button>Test</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="map" class="map-section">
+    <h2>Our Location</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.261034466523!2d79.85130067574977!3d7.2110342927946265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2ef12fb76a16f%3A0x9d4cc6fc53e6024a!2sRedTrex%20Technologies!5e0!3m2!1sen!2slk!4v1733156949149!5m2!1sen!2slk"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
+    <h2></h2>
+    <p></p>
+    <ul>
+      <li><strong>Phone:</strong> +94 (071) 262-2012</li>
+      <li><strong>Email:</strong> redtrex@technologist.com</li>
+      <li><strong>Address:</strong> 74 Katuwapitiya Road Negombo.</li>
+    </ul>
+  </section>
+
+  <!-- Dark Mode Toggle -->
+  <button class="dark-mode-toggle" id="darkModeToggle">Switch to Dark Mode</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
