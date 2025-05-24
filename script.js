@@ -40,3 +40,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// Contact Toggle Functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const contactToggle = document.getElementById("contactToggle");
+  const contactDetails = document.getElementById("contactDetails");
+
+  if (contactToggle && contactDetails) {
+    contactToggle.addEventListener("click", () => {
+      contactDetails.classList.toggle("show");
+
+      // Optional: change button text based on visibility
+      if (contactDetails.classList.contains("show")) {
+        contactToggle.textContent = "Hide Contact Info";
+      } else {
+        contactToggle.textContent = "Show Contact Info";
+      }
+    });
+  }
+});
