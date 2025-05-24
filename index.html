@@ -34,13 +34,25 @@
         height: 300px;
       }
     }
+
+    /* Contact toggle styles */
+    #contactDetails {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease, opacity 0.4s ease;
+      opacity: 0;
+    }
+    #contactDetails.show {
+      max-height: 200px;
+      opacity: 1;
+    }
   </style>
 </head>
 <body class="light-mode">
   <header class="navbar">
     <div class="logo">
       <img src="9e64a828-a374-4749-be14-5e57f8d01be8.png" alt="Logo" />
-      RedTrex
+      RedTrex Technologies
     </div>
     <nav>
       <ul></ul>
@@ -117,18 +129,30 @@
 
   <!-- Contact Us Section -->
   <section id="contact" class="contact">
-    <h2></h2>
-    <p></p>
-    <ul>
-      <li><strong>Phone:</strong> +94 (071) 262-2012</li>
-      <li><strong>Email:</strong> redtrex@technologist.com</li>
-      <li><strong>Address:</strong> 74 Katuwapitiya Road Negombo.</li>
-    </ul>
+    <h2>Contact Us</h2>
+    <button id="contactToggle">Show Contact Info</button>
+    <div id="contactDetails">
+      <ul>
+        <li><strong>Phone:</strong> +94 (071) 262-2012</li>
+        <li><strong>Email:</strong> redtrex@technologist.com</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Dark Mode Toggle -->
   <button class="dark-mode-toggle" id="darkModeToggle">Switch to Dark Mode</button>
 
   <script src="script.js"></script>
+
+  <!-- Contact Slide Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('contactToggle');
+    const contactBox = document.getElementById('contactDetails');
+
+    toggleBtn.addEventListener('click', () => {
+      contactBox.classList.toggle('show');
+      toggleBtn.textContent = contactBox.classList.contains('show') ? 'Hide Contact Info' : 'Show Contact Info';
+    });
+  </script>
 </body>
 </html>
