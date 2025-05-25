@@ -34,7 +34,6 @@
         height: 300px;
       }
     }
-
     #contactDetails {
       overflow: hidden;
       max-height: 0;
@@ -45,9 +44,42 @@
       max-height: 200px;
       opacity: 1;
     }
+
+    /* ✅ Stylish Chat Button */
+    .chat-button-container {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+    }
+    .chat-button-container button {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .chat-button-container button:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body class="light-mode">
+
+  <!-- ✅ Stylish Chat Button -->
+  <div class="chat-button-container">
+    <a href="https://page.botpenguin.com/6832aa5ad5c4f2223b2e55ef/6832aa32cb370705a466d39b" target="_blank" style="text-decoration: none;">
+      <button>💬 Chat With Rina</button>
+    </a>
+  </div>
+
   <header class="navbar">
     <div class="logo">
       <img src="9e64a828-a374-4749-be14-5e57f8d01be8.png" alt="Logo" />
@@ -142,7 +174,7 @@
     });
   </script>
 
-  <!-- ✅ BotPenguin Script (Corrected) -->
+  <!-- ✅ BotPenguin Script -->
   <script defer>
     window.botPenguinSettings = {
       bot_key: "6832aa5ad5c4f2223b2e55ef",
